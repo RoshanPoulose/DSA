@@ -268,32 +268,87 @@
 // console.log(uni)    
 
 
-function  characters(arr){
-    let data=arr.split("")
-    let result={}  
-    for(let item of data){
-         if(result[item]){
-             result[item]++
-         }else{
-          result[item]=1
-         }
-    } 
-    let count =Object.values(result)
-    let  sa=[]
-    for(let iteam of count) {
-      if(iteam==1){
-        sa.push(iteam)
-      }
-    }
-    if(sa.length<1){  
-      return false    
-    }    
-    else{  
-      return true                       
-    }                                           
-}
-     
-console.log(characters("listen silent"))  
-    
-         
+// function  characters(arr){
+//     let data=arr.split("")
+//     let result={}  
+//     for(let item of data){
+//          if(result[item]){
+//              result[item]++
+//          }else{
+//           result[item]=1
+//          }
+//     } 
+//     let count =Object.values(result)
+//     let  sa=[]
+//     for(let iteam of count) {
+//       if(iteam==1){
+//         sa.push(iteam)
+//       }
+//     }
+//     if(sa.length<1){  
+//       return false    
+//     }    
+//     else{  
+//       return true                       
+//     }                                           
+// }    
+             
+// console.log(characters("listen silent"))  
 
+  
+
+// function isAngram(str1,str2){
+//      let data1=str1.split("").sort().join("")
+//      let data2=str2.split("").sort().join("")
+//      if(data1===data2){
+//       return true
+//      }
+//      return false             
+// }
+    
+// console.log(isAngram("sam","msa"))
+            
+
+
+// function isValid(str) {
+//     let stack = [];
+
+//     for (let char of str) {
+//         if (char === '(') stack.push(')');    
+//         else if (char === '{') stack.push('}');
+//         else if (char === '[') stack.push(']');
+//         else {
+//             if (stack.pop() !== char) return false;  
+//         }
+//     }        
+
+//     return stack.length === 0;          
+// }
+// console.log(isValid("()}"));   // true
+// console.log(isValid("{(})"));   // false         
+// console.log(isValid("[(])"));   // false               
+// console.log(isValid("[]{}()"));        
+
+
+
+// function tos(str){
+//   let stack=[]
+//   for(let char of str){
+//       if(char=="{") stack.push("}") 
+//       else if(char=="(") stack.push(")")
+//       else if(char=="[") stack.push("]")
+//       else{
+//         if(stack.pop()!==char){
+//           return false
+//         }
+//       }          
+//   }
+//   return true
+// }        
+     
+// console.log(tos("[]{}()"))   
+                  
+function todup(){                        
+  let result={}                                      
+                                                                                                                                                                       
+}                                                                                    
