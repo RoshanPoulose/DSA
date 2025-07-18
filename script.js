@@ -239,34 +239,61 @@
 // let das=rev.split(" ").reverse().join(" ")
 // console.log(das)
 
-function uniq(arr) {
-  let data = arr.split("");
-  let result = {};
-  for (let item of data) {
-    if(result[item]){
-        result[item]++
-    }
-    else{
-      result[item]=1
-    }  
-  }     
-  for (let char of data) {                     
-    if (result[char] === 1) {
-      return char;  
-    }
-  }
+// function uniq(arr) {
+//   let data = arr.split("");
+//   let result = {};
+//   for (let item of data) {
+//     if(result[item]){
+//         result[item]++
+//     }
+//     else{
+//       result[item]=1
+//     }  
+//   }     
+//   for (let char of data) {                     
+//     if (result[char] === 1) {
+//       return char;  
+//     }
+//   }
  
   
-}   
+// }   
                                                           
-console.log(uniq("aabbcddd"));   
+// console.log(uniq("aabbcddd"));   
 
   
-let alpa="aabbcddd"
-let ds=alpa.split("")  
-let uni=[...new Set(ds)]       
-console.log(uni)    
+// let alpa="aabbcddd"
+// let ds=alpa.split("")  
+// let uni=[...new Set(ds)]       
+// console.log(uni)    
+
+
+function  characters(arr){
+    let data=arr.split("")
+    let result={}  
+    for(let item of data){
+         if(result[item]){
+             result[item]++
+         }else{
+          result[item]=1
+         }
+    } 
+    let count =Object.values(result)
+    let  sa=[]
+    for(let iteam of count) {
+      if(iteam==1){
+        sa.push(iteam)
+      }
+    }
+    if(sa.length<1){  
+      return false    
+    }    
+    else{  
+      return true                       
+    }                                           
+}
      
-  
+console.log(characters("listen silent"))  
+    
          
 
