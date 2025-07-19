@@ -248,36 +248,33 @@
 //     }
 //     else{
 //       result[item]=1
-//     }  
-//   }     
-//   for (let char of data) {                     
-//     if (result[char] === 1) {
-//       return char;  
 //     }
 //   }
- 
-  
-// }   
-                                                          
-// console.log(uniq("aabbcddd"));   
+//   for (let char of data) {
+//     if (result[char] === 1) {
+//       return char;
+//     }
+//   }
 
-  
+// }
+
+// console.log(uniq("aabbcddd"));
+
 // let alpa="aabbcddd"
-// let ds=alpa.split("")  
-// let uni=[...new Set(ds)]       
-// console.log(uni)    
-
+// let ds=alpa.split("")
+// let uni=[...new Set(ds)]
+// console.log(uni)
 
 // function  characters(arr){
 //     let data=arr.split("")
-//     let result={}  
+//     let result={}
 //     for(let item of data){
 //          if(result[item]){
 //              result[item]++
 //          }else{
 //           result[item]=1
 //          }
-//     } 
+//     }
 //     let count =Object.values(result)
 //     let  sa=[]
 //     for(let iteam of count) {
@@ -285,17 +282,15 @@
 //         sa.push(iteam)
 //       }
 //     }
-//     if(sa.length<1){  
-//       return false    
-//     }    
-//     else{  
-//       return true                       
-//     }                                           
-// }    
-             
-// console.log(characters("listen silent"))  
+//     if(sa.length<1){
+//       return false
+//     }
+//     else{
+//       return true
+//     }
+// }
 
-  
+// console.log(characters("listen silent"))
 
 // function isAngram(str1,str2){
 //      let data1=str1.split("").sort().join("")
@@ -303,93 +298,168 @@
 //      if(data1===data2){
 //       return true
 //      }
-//      return false             
+//      return false
 // }
-    
-// console.log(isAngram("sam","msa"))
-            
 
+// console.log(isAngram("sam","msa"))
 
 // function isValid(str) {
 //     let stack = [];
 
 //     for (let char of str) {
-//         if (char === '(') stack.push(')');    
+//         if (char === '(') stack.push(')');
 //         else if (char === '{') stack.push('}');
 //         else if (char === '[') stack.push(']');
 //         else {
-//             if (stack.pop() !== char) return false;  
+//             if (stack.pop() !== char) return false;
 //         }
-//     }        
+//     }
 
-//     return stack.length === 0;          
+//     return stack.length === 0;
 // }
 // console.log(isValid("()}"));   // true
-// console.log(isValid("{(})"));   // false         
-// console.log(isValid("[(])"));   // false               
-// console.log(isValid("[]{}()"));        
-
-
+// console.log(isValid("{(})"));   // false
+// console.log(isValid("[(])"));   // false
+// console.log(isValid("[]{}()"));
 
 // function tos(str){
 //   let stack=[]
 //   for(let char of str){
-//       if(char=="{") stack.push("}") 
+//       if(char=="{") stack.push("}")
 //       else if(char=="(") stack.push(")")
 //       else if(char=="[") stack.push("]")
 //       else{
 //         if(stack.pop()!==char){
 //           return false
 //         }
-//       }          
+//       }
 //   }
 //   return true
-// }        
-     
-// console.log(tos("[]{}()"))   
-                  
-// function sames(str1,str2){                        
-//   let data1=str1.split("").sort().join("") 
-//   let data2=str2.split("").sort().join("")                                     
-            
+// }
+
+// console.log(tos("[]{}()"))
+
+// function sames(str1,str2){
+//   let data1=str1.split("").sort().join("")
+//   let data2=str2.split("").sort().join("")
+
 //   if(data1==data2){
 //     return true
 //   }
 //   else{
-//     return false       
+//     return false
 //   }
-// }   
-// console.log(sames("roshan","osnrbha"))                                                                                     
+// }
+// console.log(sames("roshan","osnrbha"))
 
-
-
-// function diffet(arr){     
+// function diffet(arr){
 //      let item=[]
 //      for(let char of arr){
-                 
-//      }   
+
+//      }
 
 // }
 
-//                      
+//
 
+// function toPrime(num) {
+//   if (num <= 2) {
+//     return "ites as prime number";
+//   }
+//   for (let i = 2; i <= num - 1; i++) {
+//     if (num % i == 0) {
+//       return "its a not prime prime";
+//     } else {
+//       return "its a prime number";
+//     }
+//   }
+// }
+// console.log(toPrime(2));
+//  (10/3*b+b)-b
 
-
-function toPrime(num){
-  if(num<=2){
-    return "ites as prime number"
+function toPrime(num) {
+  if (num <= 2) {
+    return true;
   }
-  for(let i=2;i<=num-1;i++){
-    if(num %i==0){
-      return "its a not prime prime"  
+  for (let i = 2; i <= num - 1; i++) {
+    let b=0
+    for(let j=2;j<=num;j++){
+      if(b<=j){
+        b++  
+      }
     }
-    else{                     
-      return "its a prime number"              
-    }             
-  }                      
-}   
-console.log(toPrime(2))            
+    let a=num 
+
+    // let first=i/num
+    // let second=first*num
+    // let third=second+num  
+    // let last=third-num 
+    // if ( last==10) {  
+    //   return false;
+    // }
+    //  else {
+    //   return true;
+    // }
+    return b
+  }
+}
+console.log(toPrime(6));
+
+// let num=7
+// let first = 10 / num;  
+// let second = first * num;
+
+// let third = second + num;
+// let last = third - num;   
   
-     
-    
-           
+                  
+// console.log(third)     
+
+// let str = "programming";
+
+// function uniq() {
+//   let result = {};
+
+//   let data = str.split("");
+//   data.forEach((item) => {
+//     if (result[item]) {
+//       result[item]++;
+//     } else {
+//       result[item] = 1;
+//     }
+//   });
+//   let uniq = [];
+//   for (let key in result) {
+//     if (result[key] === 1) {
+//       uniq.push(key);
+//     }
+//   }
+//   return uniq;
+// }
+
+// console.log(uniq(str));
+
+// function uniqs(arr) {
+//   let stack = [];
+//   for (let char of arr) {
+//     if (char == "{") stack.push("}");
+//     else if (char == "[") stack.push("]");
+//     else if (char == "(") stack.pop("]");
+//     else {
+//       if (stack.pop() !== char) {
+//         return false;
+//       }
+//     }
+//   }   
+//     return stack.length === 0;
+// }             
+                                                   
+// console.log(uniqs("{[]}"));                                                   
+                                                                          
+
+       
+
+                   
+                      
+  
+                            
