@@ -348,7 +348,48 @@
      
 // console.log(tos("[]{}()"))   
                   
-function todup(){                        
-  let result={}                                      
-                                                                                                                                                                       
-}                                                                                    
+// function sames(str1,str2){                        
+//   let data1=str1.split("").sort().join("") 
+//   let data2=str2.split("").sort().join("")                                     
+            
+//   if(data1==data2){
+//     return true
+//   }
+//   else{
+//     return false       
+//   }
+// }   
+// console.log(sames("roshan","osnrbha"))                                                                                     
+
+
+
+// function diffet(arr){     
+//      let item=[]
+//      for(let char of arr){
+                 
+//      }   
+
+// }
+
+//                      
+
+
+
+function toPrime(num){
+  if(num<=2){
+    return "ites as prime number"
+  }
+  for(let i=2;i<=num-1;i++){
+    if(num %i==0){
+      return "its a not prime prime"  
+    }
+    else{                     
+      return "its a prime number"              
+    }             
+  }                      
+}   
+console.log(toPrime(2))            
+  
+     
+    
+           
