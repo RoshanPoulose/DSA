@@ -32,9 +32,9 @@
 // }
 // console.log(pali("sas"))
 
-// function fib(arr){
+// function fib(arr){  
 
-//     let a=0
+//     let a=0  
 //     let b=1
 //     for(let i=1;i<=arr;i++){
 //         console.log(a)
@@ -377,33 +377,33 @@
 // console.log(toPrime(2));
 //  (10/3*b+b)-b
 
-function toPrime(num) {
-  if (num <= 2) {
-    return true;
-  }
-  for (let i = 2; i <= num - 1; i++) {
-    let b=0
-    for(let j=2;j<=num;j++){
-      if(b<=j){
-        b++  
-      }
-    }
-    let a=num 
+// function toPrime(num) {
+//   if (num <= 2) {
+//     return true;
+//   }
+//   for (let i = 2; i <= num - 1; i++) {
+//     let b=0
+//     for(let j=2;j<=num;j++){
+//       if(b<=num){
+//         b++   
+//       }
+//     }
+//     let a=num 
 
-    // let first=i/num
-    // let second=first*num
-    // let third=second+num  
-    // let last=third-num 
-    // if ( last==10) {  
-    //   return false;
-    // }
-    //  else {
-    //   return true;
-    // }
-    return b
-  }
-}
-console.log(toPrime(6));
+//     let first=i/num
+//     let second=first*num
+//     let third=second+num  
+//     let last=third-num 
+//     if ( last==10) {  
+//       return false;
+//     }
+//      else {
+//       return true;
+//     }
+//     return b
+//   }
+// }
+// console.log(toPrime(6));
 
 // let num=7
 // let first = 10 / num;  
@@ -453,10 +453,13 @@ console.log(toPrime(6));
 //   }   
 //     return stack.length === 0;
 // }             
-                                                   
-// console.log(uniqs("{[]}"));                                                   
-                                                                          
+                                                       
+// console.log(uniqs("{[]}"));   
 
+
+
+                                                                          
+                         
        
 
                    
