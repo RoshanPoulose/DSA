@@ -389,7 +389,6 @@
 //       }
 //     }
 //     let a=num 
-
 //     let first=i/num
 //     let second=first*num
 //     let third=second+num  
@@ -454,15 +453,107 @@
 //     return stack.length === 0;
 // }             
                                                        
-// console.log(uniqs("{[]}"));   
+// console.log(uniqs("{[]}"));  
+
+      
+// function counters(arr){
+//     let counts=[]
+//     let data=arr.split("")
+//     for(let item of data){             
+//       if(item == " ") continue ;
+//       if(counts[item]){
+//         counts[item]++  
+//       }else{
+//         counts[item]=1
+//       }
+//     } 
+//     return counts             
+// }                        
+// console.log(counters("hello world"))
+         
 
 
+// function most(arr){
+//   let count={}
+//   for(let item of arr){
+//     if(count[item]){
+//       count[item]++
+//     }
+//     else{
+//       count[item]=1 
+//     }
+//   }
+//   let data=Object.values(count)
+//   let max=0
+//   for(let num of data){
+//     if(num>max){
+//       max=num
+//     }  
+//   }
+//   return max
 
-                                                                          
-                         
-       
 
-                   
-                      
+// }
+// console.log(most([1, 3, 2, 3, 4, 1, 3, 2, 4]))
+   
+
+
+// function isAngram(str1,str2){
+//       let data1=str1.split("").sort().join()
+//       let data2=str2.split("").sort().join()
+//       if(data1==data2){
+//         return "its (An anagram "
+//       }
+//       else{
+//         return "not"
+//       }               
+// }                  
+// console.log(isAngram("listens", "silent"))          
+
+// function flats(arr){                          
+//       return arr.flat(Infinity)                   
+// }           
+// console.log(flats([1,[2, 3], [4, [5, 6]]]))                                                                        
+                             
+                                       
+                                                                                                               
+                                                                        
+              
+// function dups(arr){
+//     let num=[]
+//     for(let item of arr ){
+//       if(!num.includes(item)){
+//         num.push(item)
+//       }
+//     } 
+//     return num
+
+// }
+     
+// console.log(dups([1, 2, 2, 3, 4, 3, 5, 1]))
+                    
+
+
+// function firstUniqueChar(arr){
+
+//   let result={}
+//   for(let item of arr.split("")){
+//     if(result[item]){      
+//       result[item]++     
+//     }
+//     else{     
+//       result[item]=1    
+//     }      
+//   }          
+//   return result                                                   
+                                                                                
+// }                     
+                                                                                  
+// console.log(firstUniqueChar("aabbcc"))              
   
-                            
+
+  
+  
+
+
+                                                                  
