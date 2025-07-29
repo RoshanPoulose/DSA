@@ -549,11 +549,172 @@
                                                                                 
 // }                     
                                                                                   
-// console.log(firstUniqueChar("aabbcc"))              
+// console.log(firstUniqueChar("aabbcc"))               
+    
+// function nonrep(arr){
+//     let data=arr.split("")
+//     let result={}  
+//     for(let item of data){    
+//        if(result[item]){             
+//         result[item]++                                       
+//        }
+//        else{             
+//         result[item]=1      
+//        }           
+//     }          
+//     for (let char of data){
+//         if(result[char]==1){
+//             return char
+//         }
+//     } 
+          
+//     return null
+// }
+// console.log(nonrep("aabbcsc"))  
+
+
+
+
+
+// function toNo(arr){
+//     let data=arr.split("")
+//     let result={}
+//     for(let iteam of data){
+//         if(result[iteam]){
+//             result[iteam]++
+//         }
+//         else{
+//             result[iteam]=1
+//         }
+//     }
+//     for(let char of data){
+//         if(result[char]==1){
+//             return char
+//         }
+//     }
+//     return null
+// }     
+// console.log(toNo("aabbccdef"));        
+
+
+// function  isAngram(str1,str2){
+//     let data1=str1.split("").sort().join("")
+//     let data2=str2.split("").sort().join("")
+//     if(data1==data2){
+//         return " its angram"
+//     }
+//     else{
+//         return "not angram"
+//     }
+    
+// }
+// console.log(isAngram("listen", "silent")) 
+
+// function pali(num){
+//         let arr=num.toString()
+//         let num2=""
+//         for(let i=arr.length-1;i>=0;i--){
+//              num2+=arr[i]
+//         }
+//         if(num2==arr){
+//             return "its palidrome "
+//         }
+//         return "not pali"
+    
+// }
+// console.log(pali(121))
+
+
+// function  fib(n){
+//    let a=0
+//    let b=1
+//     let news=[]
+//     for(let i=0;i<n;i++){
+//        news.push(a)
+//        let next=a+b            
+//        a=b
+//        b=next 
+             
+//     }   
+//     return news                          
+// }        
+      
+// console.log(fib(7))
+      
+
+
+
+// function isPowerOfTwo(n) {
+//   if (n <= 0) return false;
+
+//   while (n > 1) {
+//     if (n % 2 !== 0) {
+//       return false;
+//     }
+//     n = n / 2;         
+//   }
+
+//   return true;
+// }  
+// console.log(isPowerOfTwo(392))               
+// let num=1  
+// let num2=2
+// console.log("num2")      
+  
   
 
-  
-  
+// function outer(){
+//   let name="roshan"
+//   function inner(){
+//     return `name${name}`
+//   }
+//   return inner
+// }  
+
+// let na=outer()    
+// console.log(na()) 
 
 
-                                                                  
+// function outer(){
+//   let name="roshan"  
+//   function inner(){
+//     return name
+//   }
+//   return inner
+// }
+
+// let na=outer()
+
+// console.log(na())
+
+
+
+function greet(name,callback){
+   console.log(name)
+   callback()
+}
+
+function saybye(){
+  console.log("goodbaye")
+}      
+
+greet("roshan",saybye)
+
+// fetch("https://jsonplaceholder.typicode.com/comments")
+// .then(res=>res.json())
+// .then(data=>{
+//   data.forEach(item => {
+//     console.log(item.email)
+//   });
+// })
+
+
+const datas =async()=>{
+  let value=await fetch("https://jsonplaceholder.typicode.com/comments")
+  let res= await value.json()
+  res.forEach((item)=>{
+    console.log(item.email)
+  })
+}
+
+datas()
