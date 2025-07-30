@@ -32,9 +32,9 @@
 // }
 // console.log(pali("sas"))
 
-// function fib(arr){  
+// function fib(arr){
 
-//     let a=0  
+//     let a=0
 //     let b=1
 //     for(let i=1;i<=arr;i++){
 //         console.log(a)
@@ -385,15 +385,15 @@
 //     let b=0
 //     for(let j=2;j<=num;j++){
 //       if(b<=num){
-//         b++   
+//         b++
 //       }
 //     }
-//     let a=num 
+//     let a=num
 //     let first=i/num
 //     let second=first*num
-//     let third=second+num  
-//     let last=third-num 
-//     if ( last==10) {  
+//     let third=second+num
+//     let last=third-num
+//     if ( last==10) {
 //       return false;
 //     }
 //      else {
@@ -405,14 +405,13 @@
 // console.log(toPrime(6));
 
 // let num=7
-// let first = 10 / num;  
+// let first = 10 / num;
 // let second = first * num;
 
 // let third = second + num;
-// let last = third - num;   
-  
-                  
-// console.log(third)     
+// let last = third - num;
+
+// console.log(third)
 
 // let str = "programming";
 
@@ -449,29 +448,26 @@
 //         return false;
 //       }
 //     }
-//   }   
+//   }
 //     return stack.length === 0;
-// }             
-                                                       
-// console.log(uniqs("{[]}"));  
+// }
 
-      
+// console.log(uniqs("{[]}"));
+
 // function counters(arr){
 //     let counts=[]
 //     let data=arr.split("")
-//     for(let item of data){             
+//     for(let item of data){
 //       if(item == " ") continue ;
 //       if(counts[item]){
-//         counts[item]++  
+//         counts[item]++
 //       }else{
 //         counts[item]=1
 //       }
-//     } 
-//     return counts             
-// }                        
+//     }
+//     return counts
+// }
 // console.log(counters("hello world"))
-         
-
 
 // function most(arr){
 //   let count={}
@@ -480,7 +476,7 @@
 //       count[item]++
 //     }
 //     else{
-//       count[item]=1 
+//       count[item]=1
 //     }
 //   }
 //   let data=Object.values(count)
@@ -488,15 +484,12 @@
 //   for(let num of data){
 //     if(num>max){
 //       max=num
-//     }  
+//     }
 //   }
 //   return max
 
-
 // }
 // console.log(most([1, 3, 2, 3, 4, 1, 3, 2, 4]))
-   
-
 
 // function isAngram(str1,str2){
 //       let data1=str1.split("").sort().join()
@@ -506,75 +499,65 @@
 //       }
 //       else{
 //         return "not"
-//       }               
-// }                  
-// console.log(isAngram("listens", "silent"))          
+//       }
+// }
+// console.log(isAngram("listens", "silent"))
 
-// function flats(arr){                          
-//       return arr.flat(Infinity)                   
-// }           
-// console.log(flats([1,[2, 3], [4, [5, 6]]]))                                                                        
-                             
-                                       
-                                                                                                               
-                                                                        
-              
+// function flats(arr){
+//       return arr.flat(Infinity)
+// }
+// console.log(flats([1,[2, 3], [4, [5, 6]]]))
+
 // function dups(arr){
 //     let num=[]
 //     for(let item of arr ){
 //       if(!num.includes(item)){
 //         num.push(item)
 //       }
-//     } 
+//     }
 //     return num
 
 // }
-     
-// console.log(dups([1, 2, 2, 3, 4, 3, 5, 1]))
-                    
 
+// console.log(dups([1, 2, 2, 3, 4, 3, 5, 1]))
 
 // function firstUniqueChar(arr){
 
 //   let result={}
 //   for(let item of arr.split("")){
-//     if(result[item]){      
-//       result[item]++     
+//     if(result[item]){
+//       result[item]++
 //     }
-//     else{     
-//       result[item]=1    
-//     }      
-//   }          
-//   return result                                                   
-                                                                                
-// }                     
-                                                                                  
-// console.log(firstUniqueChar("aabbcc"))               
-    
+//     else{
+//       result[item]=1
+//     }
+//   }
+//   return result
+
+// }
+
+// console.log(firstUniqueChar("aabbcc"))
+
 // function nonrep(arr){
 //     let data=arr.split("")
-//     let result={}  
-//     for(let item of data){    
-//        if(result[item]){             
-//         result[item]++                                       
+//     let result={}
+//     for(let item of data){
+//        if(result[item]){
+//         result[item]++
 //        }
-//        else{             
-//         result[item]=1      
-//        }           
-//     }          
+//        else{
+//         result[item]=1
+//        }
+//     }
 //     for (let char of data){
 //         if(result[char]==1){
 //             return char
 //         }
-//     } 
-          
+//     }
+
 //     return null
 // }
-// console.log(nonrep("aabbcsc"))  
-
-
-
-
+// console.log(nonrep("aabbcsc"))
 
 // function toNo(arr){
 //     let data=arr.split("")
@@ -593,9 +576,8 @@
 //         }
 //     }
 //     return null
-// }     
-// console.log(toNo("aabbccdef"));        
-
+// }
+// console.log(toNo("aabbccdef"));
 
 // function  isAngram(str1,str2){
 //     let data1=str1.split("").sort().join("")
@@ -606,9 +588,9 @@
 //     else{
 //         return "not angram"
 //     }
-    
+
 // }
-// console.log(isAngram("listen", "silent")) 
+// console.log(isAngram("listen", "silent"))
 
 // function pali(num){
 //         let arr=num.toString()
@@ -620,10 +602,9 @@
 //             return "its palidrome "
 //         }
 //         return "not pali"
-    
+
 // }
 // console.log(pali(121))
-
 
 // function  fib(n){
 //    let a=0
@@ -631,18 +612,15 @@
 //     let news=[]
 //     for(let i=0;i<n;i++){
 //        news.push(a)
-//        let next=a+b            
+//        let next=a+b
 //        a=b
-//        b=next 
-             
-//     }   
-//     return news                          
-// }        
-      
+//        b=next
+
+//     }
+//     return news
+// }
+
 // console.log(fib(7))
-      
-
-
 
 // function isPowerOfTwo(n) {
 //   if (n <= 0) return false;
@@ -651,17 +629,15 @@
 //     if (n % 2 !== 0) {
 //       return false;
 //     }
-//     n = n / 2;         
+//     n = n / 2;
 //   }
 
 //   return true;
-// }  
-// console.log(isPowerOfTwo(392))               
-// let num=1  
+// }
+// console.log(isPowerOfTwo(392))
+// let num=1
 // let num2=2
-// console.log("num2")      
-  
-  
+// console.log("num2")
 
 // function outer(){
 //   let name="roshan"
@@ -669,14 +645,13 @@
 //     return `name${name}`
 //   }
 //   return inner
-// }  
+// }
 
-// let na=outer()    
-// console.log(na()) 
-
+// let na=outer()
+// console.log(na())
 
 // function outer(){
-//   let name="roshan"  
+//   let name="roshan"
 //   function inner(){
 //     return name
 //   }
@@ -687,18 +662,16 @@
 
 // console.log(na())
 
+// function greet(name,callback){
+//    console.log(name)
+//    callback()
+// }
 
+// function saybye(){
+//   console.log("goodbaye")
+// }
 
-function greet(name,callback){
-   console.log(name)
-   callback()
-}
-
-function saybye(){
-  console.log("goodbaye")
-}      
-
-greet("roshan",saybye)
+// greet("roshan",saybye)
 
 // fetch("https://jsonplaceholder.typicode.com/comments")
 // .then(res=>res.json())
@@ -708,13 +681,189 @@ greet("roshan",saybye)
 //   });
 // })
 
+// const datas =async()=>{
+//   let value=await fetch("https://jsonplaceholder.typicode.com/comments")
+//   let res= await value.json()
+//   res.forEach((item)=>{
+//     console.log(item.email)
+//   })
+// }
+// datas()
+// function counts(){
+//   setTimeout(function (){
+//     console.log("hello roshan")
+//   },1000)
+// }
+// counts()
+// function countr(){
+//   let count=0
+//   setInterval(function (){
+//     // count++;
+//     console.log("count",)
+//   },1000)
+// }
+// countr()
+// function countUp(){
+//   let count = 0;
+//   setInterval(function () {
+//     count++;
+//     console.log("Count:", );
+//   }, 1000);
+// }
+// countUp();
 
-const datas =async()=>{
-  let value=await fetch("https://jsonplaceholder.typicode.com/comments")
-  let res= await value.json()
-  res.forEach((item)=>{
-    console.log(item.email)
-  })
+// function vow(arr){
+//     let vow=["a","e","i","o","u"]
+//     if(vow.includes(arr)){
+//         return "its a vowel"
+//     }
+//     return "not a vowels"
+// }
+
+// console.log(vow("a"))
+
+// function dup(arr){
+//     let data=[]
+//     for(let item of arr){
+//         if(!data.includes(item)){
+//             data.push(item)
+//         }
+//     }
+//     return data
+// }
+// console.log(dup([1,2,3,4,2,3,4,1,6]))
+
+// function fact(num){
+//     result=1
+//     for(let i=2;i<=num;i++){
+//         result*=i
+//     }
+//     return result
+// }
+
+// console.log(fact(5))
+
+// function toLong(arr){
+//      let n=arr.split(" ")
+//      let max=[]
+//      for(let item of n){
+//         if(item.length>max.length){
+//             max=item
+//         }
+//      }
+//      return max
+
+// }
+// console.log(toLong("my name  is davibella "))
+
+// function toMost(arr){
+//     let result={}
+//     let maxCount=0
+//     let mostFreq=null
+//     for(let item of arr){
+//         if(result[item]){
+//             result[item]++
+//         }
+//         else{
+//             result[item]=1
+//         }
+//         if(result[item]>maxCount){
+//             maxCount=result[item]
+//             mostFreq=item
+
+//         }
+//     }
+//     return mostFreq
+
+// }
+// console.log(toMost([1,5,3,4,4,6,4,3,4,3,5,6,8]))
+
+// function toFindLargest(arr){
+//     let max=0
+//     for(let num of arr){
+//         if(num>max){
+//             max=num
+//         }
+//     }
+//     return max
+// }
+   
+// function sort(arr){
+//     for(let i=0;i<=arr.length;i++){
+//         for(let j=0;j<=arr.length;j++){
+//             if(arr[j]>arr[j+1]){
+//               let temp=arr[j]
+//               arr[j]=arr[j+1]
+//               arr[j+1]=temp
+//             } 
+//         }
+//     }
+//     return arr 
+// }
+// console.log(sort([1,4,2,10,3,5,6,4]))
+   
+// function findcount(arr){
+//     let result=[]
+//      let vow=["a","e","i","o","u"]
+//      for(let item of arr.split("")){
+//         if(vow.includes(item)){
+//             result.push(item)
+//         }
+//      } 
+//      return result
+// }
+// console.log(findcount("roshan"))
+
+ 
+
+// function rev(arr){ 
+//     let s=""
+//     for(let i=arr.length-1;i>=0;i--){          
+//         s+=arr[i]        
+//     }         
+//     return s    
+// }                   
+// console.log(rev("roshan"))      
+     
+// function thePlane(arr) {     
+//   let data = arr.split(",");
+//   let p = [];
+//   let n = [];         
+//   for (let i = 0; i <= data.length; i++) {
+//     let dum = data[i].trim().split(" ");  
+//     if (dum.includes("Board")) {
+//       break;
+//     } else if (dum.includes("ADD_PRIORITY")) {
+//       p.push(dum[1]);            
+//     } else if (dum.includes("ADD_NORMAL")) {
+//       n.push(dum[1]);          
+//     }
+//   }          
+//   let board = [...p, ...n]; 
+//   return board;   
+// }                                 
+// console.log(thePlane("ADD_NORMAL Alice , ADD_NORMAL Bob , ADD_PRIORITY Carol,Board, ADD_NORMAL David"));
+
+
+function valu(arr){
+   let result={}
+   let data=arr.split("")
+
+   for(let item of data){
+    if(result[item]){
+      result[item]++
+    }
+    else{
+      result[item]=1
+    }
+   }
+   return result
 }
+console.log(valu("aabbcc"))
 
-datas()
+
+
+
+              
+        
+                                             
