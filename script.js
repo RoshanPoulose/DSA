@@ -195,7 +195,7 @@
 //    }
 //    return large
 // }
-
+         
 // console.log(tofind("my name is sobithkopee"))
 
 // function count(arr){
@@ -531,7 +531,7 @@
 //     else{
 //       result[item]=1
 //     }
-//   }
+//   }    
 //   return result
 
 // }
@@ -787,7 +787,7 @@
 //     }
 //     return max
 // }
-   
+
 // function sort(arr){
 //     for(let i=0;i<=arr.length;i++){
 //         for(let j=0;j<=arr.length;j++){
@@ -795,13 +795,13 @@
 //               let temp=arr[j]
 //               arr[j]=arr[j+1]
 //               arr[j+1]=temp
-//             } 
+//             }
 //         }
 //     }
-//     return arr 
+//     return arr
 // }
 // console.log(sort([1,4,2,10,3,5,6,4]))
-   
+
 // function findcount(arr){
 //     let result=[]
 //      let vow=["a","e","i","o","u"]
@@ -809,61 +809,205 @@
 //         if(vow.includes(item)){
 //             result.push(item)
 //         }
-//      } 
+//      }
 //      return result
 // }
 // console.log(findcount("roshan"))
 
- 
-
-// function rev(arr){ 
+// function rev(arr){
 //     let s=""
-//     for(let i=arr.length-1;i>=0;i--){          
-//         s+=arr[i]        
-//     }         
-//     return s    
-// }                   
-// console.log(rev("roshan"))      
-     
-// function thePlane(arr) {     
+//     for(let i=arr.length-1;i>=0;i--){
+//         s+=arr[i]
+//     }
+//     return s
+// }
+// console.log(rev("roshan"))
+// function valu(arr){
+//    let result={}
+//    let data=arr.split("")
+
+//    for(let item of data){
+//     if(result[item]){
+//       result[item]++
+//     }
+//     else{
+//       result[item]=1
+//     }
+//    }
+//    let datas=Object.values(result)
+//    let v1=datas[0]
+//    for(let data of datas){
+//         if(v1!==data){
+//           return false
+//         }
+
+//    }
+//    return true
+// }
+// console.log(valu("abab"))
+// function thePlane(arr) {      
 //   let data = arr.split(",");
 //   let p = [];
-//   let n = [];         
+//   let n = [];
 //   for (let i = 0; i <= data.length; i++) {
-//     let dum = data[i].trim().split(" ");  
-//     if (dum.includes("Board")) {
-//       break;
+//     let dum = data[i].trim().split(" ");
+//     if (dum.includes("Board")) {            
+//       break;     
 //     } else if (dum.includes("ADD_PRIORITY")) {
-//       p.push(dum[1]);            
+//       p.push(dum[1]);
 //     } else if (dum.includes("ADD_NORMAL")) {
-//       n.push(dum[1]);          
+//       n.push(dum[1]);
 //     }
-//   }          
-//   let board = [...p, ...n]; 
-//   return board;   
-// }                                 
+//   }
+//   let board = [...p, ...n];
+//   return board;
+// }
 // console.log(thePlane("ADD_NORMAL Alice , ADD_NORMAL Bob , ADD_PRIORITY Carol,Board, ADD_NORMAL David"));
 
+// function music(m) {
+//   let song = [];    
+//   let rem = [];
+//   let not=[]
+//   let newsong = [];
+//   let data = m.split(",");
+//   // let data=v.trim().split(" ")    
+//   for (let i = 0; i < data.length; i++) {
+//     let val = data[i].trim().split(" ");
+//     if (val.includes("ADD")) {
+//       song.push(val[1]);
+//     } else if (val.includes("REMOVE")) {
+//       if(!song.includes[val[1]]){  
+//         not.push(`song ${val[1]} not found`)
+//       }    
+//       rem.push(val[1]);
+             
+//     } else if (val.includes("PAYLIST")) {
+//       newsong.sort()    
+//     }     
+//   }    
+//   for (let item of song) {  
+//     if (!rem.includes(item)) {        
+//       newsong.push(item);        
+//     }    
+//   }   
+                                   
+//   return newsong
+// }         
+// console.log(         
+//   music(                      
+//     "ADD ShapeOfYou,ADD BlindingLights,ADD david,ADD Levitating,ADD Peaches,REMOVE BlindingLights,REMOVE SomeoneYouLoved,PLAYLIST,SHUFFLE,REMOVE Peaches,ADD Aam"
+//   )       
+// );                        
+  
 
-function valu(arr){
-   let result={}
-   let data=arr.split("")
+// function lg(arr){
+//   let large=arr[0]
+//   for(let lg of arr){
+//     if(lg>large){
+//       large=lg
+//     }
+//   }
+//   let second=[]
+//   arr.forEach(item => {
+//      if(item!==large){
+//       second.push(item)
+//      }        
+//   });
+//   let seconds=second[0]
+//   for(let num of second){
+//     if(num>seconds){ 
+//       seconds=num
+//     }
+//   } 
+//   return seconds   
+// }  
+// console.log(lg([1,5,7,3,2,4,2]))  
+ 
+// function fib(n){        
+//     let num=[] 
+//     let a=0
+//     let b=1
+//     for(let i=0;i<n;i++){  
+//        num.push(a)
+//        let next=a+b
+//        a=b
+//        b=next
 
-   for(let item of data){
-    if(result[item]){
-      result[item]++
-    }
-    else{
-      result[item]=1
-    }
-   }
-   return result
-}
-console.log(valu("aabbcc"))
+//     }
+//     return num 
+// }        
+// console.log(fib(9))  
+//  function  count(){
+//     const arr = ["apple", "banana", "apple", "orange", "banana", "apple"];
+//     let resu={}
+//     for(let item of arr){
+//         if(resu[item]){
+//             resu[item]++
+//         }  
+//         else{
+//             resu[item]=1
+//         }
+//     }
+//     return resu
+    
+//  }
+
+//  console.log(count())
+
+
+
+//  function firstNonRepeating(arr){
+//      let word=arr.split("")
+//      let result={}
+//      for(let item of word){
+//         if(result[item]){
+//             result[item]++            
+//         }
+//         else{
+//             result[item]=1  
+//         }
+//      }
+
+ 
+//      for(let char of word){
+//         if(result[char]==1){
+//             return char  
+//         }  
+//      }   
+//      return null     
+//  }                
+//  console.log(firstNonRepeating("aabbcc")) 
+
+
+ function firstNonRepeating(arr){
+     let word=arr.split("")
+     let result={}
+     for(let item of word){
+        if(result[item]){
+            result[item]++            
+        }
+        else{
+            result[item]=1  
+        }
+     }  
+     return result     
+ }                
+ console.log(firstNonRepeating("aabbcc")) 
+  
+
+          
 
 
 
 
-              
+ 
+    
+      
         
-                                             
+
+  
+    
+
+                                                       
+
+ 
