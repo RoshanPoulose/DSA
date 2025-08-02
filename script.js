@@ -195,7 +195,7 @@
 //    }
 //    return large
 // }
-         
+
 // console.log(tofind("my name is sobithkopee"))
 
 // function count(arr){
@@ -531,7 +531,7 @@
 //     else{
 //       result[item]=1
 //     }
-//   }    
+//   }
 //   return result
 
 // }
@@ -845,14 +845,14 @@
 //    return true
 // }
 // console.log(valu("abab"))
-// function thePlane(arr) {      
+// function thePlane(arr) {
 //   let data = arr.split(",");
 //   let p = [];
 //   let n = [];
 //   for (let i = 0; i <= data.length; i++) {
 //     let dum = data[i].trim().split(" ");
-//     if (dum.includes("Board")) {            
-//       break;     
+//     if (dum.includes("Board")) {
+//       break;
 //     } else if (dum.includes("ADD_PRIORITY")) {
 //       p.push(dum[1]);
 //     } else if (dum.includes("ADD_NORMAL")) {
@@ -865,40 +865,39 @@
 // console.log(thePlane("ADD_NORMAL Alice , ADD_NORMAL Bob , ADD_PRIORITY Carol,Board, ADD_NORMAL David"));
 
 // function music(m) {
-//   let song = [];    
+//   let song = [];
 //   let rem = [];
 //   let not=[]
 //   let newsong = [];
 //   let data = m.split(",");
-//   // let data=v.trim().split(" ")    
+//   // let data=v.trim().split(" ")
 //   for (let i = 0; i < data.length; i++) {
 //     let val = data[i].trim().split(" ");
 //     if (val.includes("ADD")) {
 //       song.push(val[1]);
 //     } else if (val.includes("REMOVE")) {
-//       if(!song.includes[val[1]]){  
+//       if(!song.includes[val[1]]){
 //         not.push(`song ${val[1]} not found`)
-//       }    
+//       }
 //       rem.push(val[1]);
-             
+
 //     } else if (val.includes("PAYLIST")) {
-//       newsong.sort()    
-//     }     
-//   }    
-//   for (let item of song) {  
-//     if (!rem.includes(item)) {        
-//       newsong.push(item);        
-//     }    
-//   }   
-                                   
+//       newsong.sort()
+//     }
+//   }
+//   for (let item of song) {
+//     if (!rem.includes(item)) {
+//       newsong.push(item);
+//     }
+//   }
+
 //   return newsong
-// }         
-// console.log(         
-//   music(                      
+// }
+// console.log(
+//   music(
 //     "ADD ShapeOfYou,ADD BlindingLights,ADD david,ADD Levitating,ADD Peaches,REMOVE BlindingLights,REMOVE SomeoneYouLoved,PLAYLIST,SHUFFLE,REMOVE Peaches,ADD Aam"
-//   )       
-// );                        
-  
+//   )
+// );
 
 // function lg(arr){
 //   let large=arr[0]
@@ -911,103 +910,309 @@
 //   arr.forEach(item => {
 //      if(item!==large){
 //       second.push(item)
-//      }        
+//      }
 //   });
 //   let seconds=second[0]
 //   for(let num of second){
-//     if(num>seconds){ 
+//     if(num>seconds){
 //       seconds=num
 //     }
-//   } 
-//   return seconds   
-// }  
-// console.log(lg([1,5,7,3,2,4,2]))  
- 
-// function fib(n){        
-//     let num=[] 
+//   }
+//   return seconds
+// }
+// console.log(lg([1,5,7,3,2,4,2]))
+
+// function fib(n){
+//     let num=[]
 //     let a=0
 //     let b=1
-//     for(let i=0;i<n;i++){  
+//     for(let i=0;i<n;i++){
 //        num.push(a)
 //        let next=a+b
 //        a=b
 //        b=next
 
 //     }
-//     return num 
-// }        
-// console.log(fib(9))  
+//     return num
+// }
+// console.log(fib(9))
 //  function  count(){
 //     const arr = ["apple", "banana", "apple", "orange", "banana", "apple"];
 //     let resu={}
 //     for(let item of arr){
 //         if(resu[item]){
 //             resu[item]++
-//         }  
+//         }
 //         else{
 //             resu[item]=1
 //         }
 //     }
 //     return resu
-    
+
 //  }
 
 //  console.log(count())
-
-
 
 //  function firstNonRepeating(arr){
 //      let word=arr.split("")
 //      let result={}
 //      for(let item of word){
 //         if(result[item]){
-//             result[item]++            
+//             result[item]++
 //         }
 //         else{
-//             result[item]=1  
+//             result[item]=1
 //         }
 //      }
 
- 
 //      for(let char of word){
 //         if(result[char]==1){
-//             return char  
+//             return char
+//         }
+//      }
+//      return null
+//  }
+//  console.log(firstNonRepeating("aabbcc"))
+
+// function div(num){
+//     let div=[]
+//     for(let i=0;i<num;i++){
+//          if(num%i==0){
+//             div.push(i)
+//          }
+//     }
+//     return div
+// }
+// console.log(div(20))
+
+// function sub(arr){
+//     let data=arr.split("")
+//     for(let i=0;i<=data.length;i++){
+//       if()
+//     }
+// }
+// function prime(num){
+//     if(num<2){
+//         return false
+
+//     }
+//     for(let i=2;i<=num-1;i++){
+//         if(!num%i == 0){
+//             return true
+//         }
+//         else{
+//             return false
+//         }
+//     }
+// }
+
+// console.log(prime(7))
+
+// fetch("https://jsonplaceholder.typicode.com/comments")
+// .then(res=>res.json())
+// .then(data=>data.forEach(item => {
+//     console.log(item.name)
+// }))
+
+// let dats=async()=>{
+//     let datas= await fetch("https://jsonplaceholder.typicode.com/comments")
+//     let res= await datas.json()
+//      res.forEach((item)=>{
+//         console.log(item.name)
+//     })
+// }
+// dats()
+
+// function fors(num) {
+//   let value = [];
+//   let fiz=[]
+//   let buz=[]
+//   for (let i = 1; i <= num; i++) {
+//     value.push(i);
+//     if(i%3==0){
+//         fiz.push(i)
+//     }
+//     else if(i%5==0){
+//         buz.push(i)
+//     }
+//   }
+//   return `fiz is =${fiz} buzz is ==${buz}`
+
+// }
+// console.log(fors(100))
+
+// function counter(arr){
+//     let data= arr
+//     let result=[]
+//     let news =[]
+//     for(let item of data){
+//         if(result.includes(item)){
+//             news.push(item)
+//         }else{
+//             result.push(item)
+//         }
+//     }
+//     return news
+// }
+// console.log(counter([1, 3, 2, 1, 4, 3]))
+
+// function para(arr) {
+//   let stack = [];
+//   for (let char of arr) {
+//     if (char == "{") stack.push("}");
+//     else if (char == "[") stack.push("]");
+//     else if (char == "(") stack.push(")");
+//     else if (stack.pop() !== char) {
+//       return false;
+//     }
+//   }
+//   return stack;
+// } 
+// console.log(para("({[[]})"));   
+// function kpos(arr,num){         
+//     let nums =[]
+//     let num2=[]          
+//     for(let i=1;i<=arr.length-num;i++){
+//         nums.push(i)       
+//     }           
+//     for(let j=arr.length-(num-1);j<=arr.length;j++){
+//         num2.push(j)   
+//     }  
+                           
+//     return [...num2,...nums]    
+           
+// }                      
+// console.log(kpos([1,2,3,4,5],2))  
+// function GroupAngrams(arr){   
+                
+// }                        
+// console.log(GroupAngrams(["eat","tea","tan","ate","nat","bat"]))
+    
+    
+// function max(arr){
+//     let time = new Date().getTime()
+//     return time 
+// }     
+        
+// console.log(max())
+       
+       
+// function theSum(arr,sum){
+//     let num=[]
+//     let temp=[]
+//      for(let i=0;i<arr.length;i++){
+//         for(let j=i+1;j<arr.length;j++){
+//             if(arr[i]+arr[j]==sum){
+//                 temp.push([arr[i],arr[j]])
+//               } 
+            
 //         }  
 //      }   
-//      return null     
-//  }                
-//  console.log(firstNonRepeating("aabbcc")) 
-
-
- function firstNonRepeating(arr){
-     let word=arr.split("")
-     let result={}
-     for(let item of word){
-        if(result[item]){
-            result[item]++            
-        }
-        else{
-            result[item]=1  
-        }
-     }  
-     return result     
- }                
- console.log(firstNonRepeating("aabbcc")) 
-  
-
           
+//      return  temp  
+   
+// }
+
+// console.log(theSum([1,2,3,4,5,6],7))
 
 
+// function reverses(arr){
+//     let num=arr.split(" ").reverse().join(" ")
+//     return num
 
 
- 
+// }
+
+// console.log(reverses(" I am Here"))           
+
+// function nonRep(arr){      
+//     let result={}                
+//     for(let item of arr){                             
+//        if(result[item]){                           
+//         result[item]++                  
+//        }                                                     
+//        else{                      
+//         result[item]=1                                         
+//        }                      
+//     }      
+//     let num=[] 
+//     for(let char of arr){
+//         if(result[char]==1){  
+//             num.push(char)
+//         }     
+//     }   
+//     return num                   
     
-      
+               
+// }               
+                                 
+// console.log(nonRep([1,3,5,3,5,2,1,4]))           
+
+
+// fetch("https://jsonplaceholder.typicode.com/comments")
+// .then((res)=>res.json()) 
+// .then((data)=>data.forEach(element => {
+//     console.log(element.name)
+// }))  
+
+
+
+// const dub=async()=>{
+//     const res= await fetch("https://jsonplaceholder.typicode.com/comments")
+//     const data= await res.json()
+//     data.forEach((item)=>{
+//         console.log(item.name)
+//     })
+// }
+// dub()
+// let num=[152]
+// let j=num.toString().split("")
+// console.log(j)
+  
+// input [942]
+// out Put[6]
+// 9+4+2
+
+
+// function nums(arr){
+//     let data=arr.toString("").split("")
+//     let datas=0
+//     for(item of data){
+//         let n=Number(item)
+//         datas+=n
+//     }  
+//     let das=datas.toString().split("")
+//      let value=0
+//     for(item of das){
+//         let n=Number(item)
+//         value+=n
+//     }  
+//     return value         
+    
+          
+// }
+// console.log(nums([942]))  
         
 
+
+
+// function chechs(arr){
+//     let stack=[]    
+//     for( let item of arr.split("")){ 
+//         if(item=="{") stack.push("}")  
+//         else if(item=="[") stack.push("]")  
+//         else if(item=="(") stack.push(")")         
+//         else if(stack.pop()!==item){      
+//             return false                                                                                      
+//         }                                                        
+//     }                     
+//     return stack.length===0                       
+// }     
+// console.log(chechs("[([{})]"))  
+
   
-    
-
-                                                       
-
+// function longestSubstring(s) {
  
+// }    
+
+// console.log(longestSubstring("abcabcbb")); 
