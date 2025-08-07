@@ -1193,7 +1193,7 @@
 // }
 // console.log(nums([942]))  
         
-
+   
 
 
 // function chechs(arr){
@@ -1205,14 +1205,163 @@
 //         else if(stack.pop()!==item){      
 //             return false                                                                                      
 //         }                                                        
-//     }                     
-//     return stack.length===0                       
+//     }                         
+//     return stack.length===0                        
 // }     
-// console.log(chechs("[([{})]"))  
+// console.log(chechs("[([{})]"))        
+// function longestSubstring(s){           
+// }                                               
+// console.log(longestSubstring("abcabcbb"));     
 
+
+// function nonRepeat(str){
+//       let result={}
+//       let data=str.split("")
+//       for(let item of data){
+//         if(result[item]){
+//             result[item]++
+//         }
+//         else{
+//             result[item]=1
+//         }
+//       }
+     
+//       for(let char of data){
+//         if(result[char]==1){
+//             return char
+//         }
+//       }
+//       return "-"
+// }
+
+// console.log(nonRepeat("aabbcc"))  
+
+
+
+// function toDup(arr){  
+//     let result={}
+//     for(let item of arr){
+//         if(result[item]){
+//             result[item]++
+//         }
+//         else{
+//             result[item]=1
+//         }
+//     }  
+//     let num=[]                                                 
+//     for(let char of arr){
+//        if(!num.includes(char)){
+//          if(result[char]>1){
+//             num.push(char)
+//         }
+//        }
+//     }  
+//     return num
+    
+      
+// }        
+// console.log(toDup([1, 3, 2, 1, 4, 3]))      
+
+
+// function same(str1,str2){
+//     let num=[]
+//     for(let item of str1){
+//         if(str2.includes(item) && !num.includes(item)){
+//             num.push(item)
+//         }
+//     }
+//     return num
+
+// }  
+
+// console.log(same([1, 2, 2,3, 4], [3,2, 4, 5, 6]))     
+
+
+// // Example
+// let matrix1 = [
+//     [1, 2, 3],
+//     [4, 5, 6]
+// ];
+
+// let matrix2 = [
+//     [7, 8, 9],
+//     [1, 2, 3]
+// ];
+
+
+// function addMatrices(mat1, mat2) {
+//     let result = [];
+
+//     for (let i = 0; i < mat1.length; i++) {
+//         let row = [];
+//         for (let j = 0; j < mat1[0].length; j++) {
+//             row.push(mat1[i][j] + mat2[i][j]);
+//         }
+//         return row    
+//     }
+
+//     // return result;
+// }
+      
+// // Example
+// let matrix1 = [  
+//     [1, 2, 3],                                
+//     [4, 5, 6]       
+// ];             
+        
+// let matrix2 = [   
+//     [7, 8, 9],         
+//     [1, 2, 3]   
+// ];
+// console.log(addMatrices(matrix1, matrix2));    
+
+// function Toprmid(){
+//     let rows=5
+//     for(let i=1;i<=rows;i++){
+//         let line ="";
+//         for(let s=1;s<=rows-i;s++){
+//             line+=" ";
+//         }
+//         for(let j=1;j<=2*i-1;j++){
+//             line+="*"
+//         }
+//         console.log(line)
+//     }
+// }
+// Toprmid()
+
+
+function pyramid(){
+    let rows=5
+    for(let i=1;i<=rows;i++){
+        let line=''
+        for(let j=1;j<=rows-i;j++){
+            line+=" "
+        }
+        for(let k=1;k<=2*i-1;k++){
+            line+="*"
+        }
+        console.log(line)
+    }
+} 
+
+pyramid()
   
-// function longestSubstring(s) {
  
-// }    
+// function matriz(m1,m2){           
+//     let row=[]
+//     for(let i=0;)
+      
+// }  
 
-// console.log(longestSubstring("abcabcbb")); 
+let matrix1 = [     
+    [1, 2, 3],
+    [4, 5, 6]
+];
+
+let matrix2 = [
+    [7, 8, 9],
+    [1, 2, 3]
+];
+
+console.log(addMatrices(matrix1, matrix2));
