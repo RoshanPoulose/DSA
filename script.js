@@ -1354,14 +1354,132 @@ pyramid()
       
 // }  
 
-let matrix1 = [     
-    [1, 2, 3],
-    [4, 5, 6]
-];
+// let matrix1 = [     
+//     [1, 2, 3],
+//     [4, 5, 6]
+// ];
 
-let matrix2 = [
-    [7, 8, 9],
-    [1, 2, 3]
-];
+// let matrix2 = [
+//     [7, 8, 9],
+//     [1, 2, 3]
+// ];
 
-console.log(addMatrices(matrix1, matrix2));
+// console.log(addMatrices(matrix1, matrix2));
+
+
+// function hello(arr){
+//     let stack=[]
+//     for(let char of arr.split("")){
+//         if(char=="{") stack.push("}")
+//          else if(char=="(") stack.push(")")  
+//         else if(char=="[") stack.push("]")
+//         else if(stack.pop()!==char){
+//             return false 
+//         }   
+//     }              
+//     return stack.length ==0
+// }
+
+// console.log(hello("{[]()]}"))
+
+
+// function toFind(arr){
+//     let data =arr.split("")
+//     let result={}
+//     for (let item of data){
+//         if(result[item]){
+//             result[item]++
+//         }
+//         else
+//         {
+//             result[item]=1
+//         }
+//     }
+//     // return result
+//     for(let char of data){
+//         if(result[char]==1){
+//             return char
+//         }
+//     }
+//     return "not single cahrater"
+// }
+
+// console.log(toFind("aabbcdc"))  
+
+// function removeD(arr){
+//     let d=[]
+//     for(let item of arr ){
+//         if(!d.includes(item)){
+//             d.push(item)
+//         }
+//     }
+//     return d
+
+// }
+
+// console.log(removeD([1, 1, 2, 3, 3, 4]))
+
+
+// function missF(arr){
+//     let num=[]
+//     let js=[]
+//     for(let i=1;i<arr.length+1;i++){
+//         for(let j=0;j<arr.length;j++){
+//             if(arr[j]!=i){
+//                 js.push(i)
+//             }
+//         }   
+//     }    
+//     return js    
+    
+// }                         
+// console.log(missF([1, 2, 4, 5]))
+
+// function toCheck(arr){
+//        let og=[...arr]
+//        let data=arr.sort((a,b)=>a-b) 
+//     //    for(let num of data){
+//     //      for(let item of ){
+//     //         if(item!=num){
+//     //             return false
+//     //         }
+//     //      }
+//     //    }             
+
+//        for(let i=0 ;i<og.length;i++){
+//         if(og[i]!=data[i]){
+//             return false
+//         }
+//        }
+//        return true         
+// }
+// console.log(toCheck([1, 2, 3, 5,2]))
+
+
+function findSecond(arr,num){
+    let lg=arr.sort((a,b)=>b-a)
+    return lg[num-1]
+    // for(let item of arr){
+    //     if(item>lg){
+    //         lg=item  
+    //     }
+    // }
+
+    // let sc=[]
+    // for(let char of arr){
+    //     if(lg!=char){
+    //         sc.push(char)     
+    //     }    
+    // }      
+    // for(let )   
+                       
+}                                                                                       
+                                  
+                                        
+                                              
+console.log(findSecond([4, 1, 6, 7, 2],1))                      
+       
+                          
+                           
+         
+                                                                       

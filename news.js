@@ -35,6 +35,3 @@ console.log(
 );                        
   
 
-
-
-function ()
