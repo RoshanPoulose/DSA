@@ -2,20 +2,20 @@
 
 // function to find vowels count
 
-// function vow(arr){
-//     let vow=["a","e","i","o","u"]
-//     let result={}
-//       for(let item of vow){
-//         if(result.inculdes[arr]){
-//             result[item]++
-//         }else{
-//             result[item]=1
-//         }
-//     };
-//     return result
-// }
-// let names="roshan"
-// console.log(vow(names))
+function vow(arr){
+    let vow=["a","e","i","o","u"]
+    let result={}
+      for(let item of arr){
+        if(vow.includes(item)){ 
+            result[item]++ 
+        }else{  
+            result[item]=1 
+        }   
+    }; 
+    return result 
+}   
+let names="roshan"  
+console.log(vow(names))  
 
 // function pali(arr){
 //     let rev=""
@@ -1067,36 +1067,34 @@
 //     }
 //   }
 //   return stack;
-// } 
-// console.log(para("({[[]})"));   
-// function kpos(arr,num){         
+// }
+// console.log(para("({[[]})"));
+// function kpos(arr,num){
 //     let nums =[]
-//     let num2=[]          
+//     let num2=[]
 //     for(let i=1;i<=arr.length-num;i++){
-//         nums.push(i)       
-//     }           
+//         nums.push(i)
+//     }
 //     for(let j=arr.length-(num-1);j<=arr.length;j++){
-//         num2.push(j)   
-//     }  
-                           
-//     return [...num2,...nums]    
-           
-// }                      
-// console.log(kpos([1,2,3,4,5],2))  
-// function GroupAngrams(arr){   
-                
-// }                        
+//         num2.push(j)
+//     }
+
+//     return [...num2,...nums]
+
+// }
+// console.log(kpos([1,2,3,4,5],2))
+// function GroupAngrams(arr){
+
+// }
 // console.log(GroupAngrams(["eat","tea","tan","ate","nat","bat"]))
-    
-    
+
 // function max(arr){
 //     let time = new Date().getTime()
-//     return time 
-// }     
-        
+//     return time
+// }
+
 // console.log(max())
-       
-       
+
 // function theSum(arr,sum){
 //     let num=[]
 //     let temp=[]
@@ -1104,58 +1102,52 @@
 //         for(let j=i+1;j<arr.length;j++){
 //             if(arr[i]+arr[j]==sum){
 //                 temp.push([arr[i],arr[j]])
-//               } 
-            
-//         }  
-//      }   
-          
-//      return  temp  
-   
+//               }
+
+//         }
+//      }
+
+//      return  temp
+
 // }
 
 // console.log(theSum([1,2,3,4,5,6],7))
-
 
 // function reverses(arr){
 //     let num=arr.split(" ").reverse().join(" ")
 //     return num
 
+// }
+
+// console.log(reverses(" I am Here"))
+
+// function nonRep(arr){
+//     let result={}
+//     for(let item of arr){
+//        if(result[item]){
+//         result[item]++
+//        }
+//        else{
+//         result[item]=1
+//        }
+//     }
+//     let num=[]
+//     for(let char of arr){
+//         if(result[char]==1){
+//             num.push(char)
+//         }
+//     }
+//     return num
 
 // }
 
-// console.log(reverses(" I am Here"))           
-
-// function nonRep(arr){      
-//     let result={}                
-//     for(let item of arr){                             
-//        if(result[item]){                           
-//         result[item]++                  
-//        }                                                     
-//        else{                      
-//         result[item]=1                                         
-//        }                      
-//     }      
-//     let num=[] 
-//     for(let char of arr){
-//         if(result[char]==1){  
-//             num.push(char)
-//         }     
-//     }   
-//     return num                   
-    
-               
-// }               
-                                 
-// console.log(nonRep([1,3,5,3,5,2,1,4]))           
-
+// console.log(nonRep([1,3,5,3,5,2,1,4]))
 
 // fetch("https://jsonplaceholder.typicode.com/comments")
-// .then((res)=>res.json()) 
+// .then((res)=>res.json())
 // .then((data)=>data.forEach(element => {
 //     console.log(element.name)
-// }))  
-
-
+// }))
 
 // const dub=async()=>{
 //     const res= await fetch("https://jsonplaceholder.typicode.com/comments")
@@ -1168,11 +1160,10 @@
 // let num=[152]
 // let j=num.toString().split("")
 // console.log(j)
-  
+
 // input [942]
 // out Put[6]
 // 9+4+2
-
 
 // function nums(arr){
 //     let data=arr.toString("").split("")
@@ -1180,39 +1171,34 @@
 //     for(item of data){
 //         let n=Number(item)
 //         datas+=n
-//     }  
+//     }
 //     let das=datas.toString().split("")
 //      let value=0
 //     for(item of das){
 //         let n=Number(item)
 //         value+=n
-//     }  
-//     return value         
-    
-          
-// }
-// console.log(nums([942]))  
-        
-   
+//     }
+//     return value
 
+// }
+// console.log(nums([942]))
 
 // function chechs(arr){
-//     let stack=[]    
-//     for( let item of arr.split("")){ 
-//         if(item=="{") stack.push("}")  
-//         else if(item=="[") stack.push("]")  
-//         else if(item=="(") stack.push(")")         
-//         else if(stack.pop()!==item){      
-//             return false                                                                                      
-//         }                                                        
-//     }                         
-//     return stack.length===0                        
-// }     
-// console.log(chechs("[([{})]"))        
-// function longestSubstring(s){           
-// }                                               
-// console.log(longestSubstring("abcabcbb"));     
-
+//     let stack=[]
+//     for( let item of arr.split("")){
+//         if(item=="{") stack.push("}")
+//         else if(item=="[") stack.push("]")
+//         else if(item=="(") stack.push(")")
+//         else if(stack.pop()!==item){
+//             return false
+//         }
+//     }
+//     return stack.length===0
+// }
+// console.log(chechs("[([{})]"))
+// function longestSubstring(s){
+// }
+// console.log(longestSubstring("abcabcbb"));
 
 // function nonRepeat(str){
 //       let result={}
@@ -1225,7 +1211,7 @@
 //             result[item]=1
 //         }
 //       }
-     
+
 //       for(let char of data){
 //         if(result[char]==1){
 //             return char
@@ -1234,11 +1220,9 @@
 //       return "-"
 // }
 
-// console.log(nonRepeat("aabbcc"))  
+// console.log(nonRepeat("aabbcc"))
 
-
-
-// function toDup(arr){  
+// function toDup(arr){
 //     let result={}
 //     for(let item of arr){
 //         if(result[item]){
@@ -1247,21 +1231,19 @@
 //         else{
 //             result[item]=1
 //         }
-//     }  
-//     let num=[]                                                 
+//     }
+//     let num=[]
 //     for(let char of arr){
 //        if(!num.includes(char)){
 //          if(result[char]>1){
 //             num.push(char)
 //         }
 //        }
-//     }  
+//     }
 //     return num
-    
-      
-// }        
-// console.log(toDup([1, 3, 2, 1, 4, 3]))      
 
+// }
+// console.log(toDup([1, 3, 2, 1, 4, 3]))
 
 // function same(str1,str2){
 //     let num=[]
@@ -1272,10 +1254,9 @@
 //     }
 //     return num
 
-// }  
+// }
 
-// console.log(same([1, 2, 2,3, 4], [3,2, 4, 5, 6]))     
-
+// console.log(same([1, 2, 2,3, 4], [3,2, 4, 5, 6]))
 
 // // Example
 // let matrix1 = [
@@ -1288,7 +1269,6 @@
 //     [1, 2, 3]
 // ];
 
-
 // function addMatrices(mat1, mat2) {
 //     let result = [];
 
@@ -1297,23 +1277,23 @@
 //         for (let j = 0; j < mat1[0].length; j++) {
 //             row.push(mat1[i][j] + mat2[i][j]);
 //         }
-//         return row    
+//         return row
 //     }
 
 //     // return result;
 // }
-      
+
 // // Example
-// let matrix1 = [  
-//     [1, 2, 3],                                
-//     [4, 5, 6]       
-// ];             
-        
-// let matrix2 = [   
-//     [7, 8, 9],         
-//     [1, 2, 3]   
+// let matrix1 = [
+//     [1, 2, 3],
+//     [4, 5, 6]
 // ];
-// console.log(addMatrices(matrix1, matrix2));    
+
+// let matrix2 = [
+//     [7, 8, 9],
+//     [1, 2, 3]
+// ];
+// console.log(addMatrices(matrix1, matrix2));
 
 // function Toprmid(){
 //     let rows=5
@@ -1330,31 +1310,28 @@
 // }
 // Toprmid()
 
+// function pyramid(){
+//     let rows=5
+//     for(let i=1;i<=rows;i++){
+//         let line=''
+//         for(let j=1;j<=rows-i;j++){
+//             line+=" "
+//         }
+//         for(let k=1;k<=2*i-1;k++){
+//             line+="*"
+//          }
+//         console.log(line)
+//     }
+// }
+// pyramid()
 
-function pyramid(){
-    let rows=5
-    for(let i=1;i<=rows;i++){
-        let line=''
-        for(let j=1;j<=rows-i;j++){
-            line+=" "
-        }
-        for(let k=1;k<=2*i-1;k++){
-            line+="*"
-        }
-        console.log(line)
-    }
-} 
-
-pyramid()
-  
- 
-// function matriz(m1,m2){           
+// function matriz(m1,m2){
 //     let row=[]
 //     for(let i=0;)
-      
-// }  
 
-// let matrix1 = [     
+// }
+
+// let matrix1 = [
 //     [1, 2, 3],
 //     [4, 5, 6]
 // ];
@@ -1366,22 +1343,20 @@ pyramid()
 
 // console.log(addMatrices(matrix1, matrix2));
 
-
 // function hello(arr){
 //     let stack=[]
 //     for(let char of arr.split("")){
 //         if(char=="{") stack.push("}")
-//          else if(char=="(") stack.push(")")  
+//          else if(char=="(") stack.push(")")
 //         else if(char=="[") stack.push("]")
 //         else if(stack.pop()!==char){
-//             return false 
-//         }   
-//     }              
+//             return false
+//         }
+//     }
 //     return stack.length ==0
 // }
 
 // console.log(hello("{[]()]}"))
-
 
 // function toFind(arr){
 //     let data =arr.split("")
@@ -1404,7 +1379,7 @@ pyramid()
 //     return "not single cahrater"
 // }
 
-// console.log(toFind("aabbcdc"))  
+// console.log(toFind("aabbcdc"))
 
 // function removeD(arr){
 //     let d=[]
@@ -1419,7 +1394,6 @@ pyramid()
 
 // console.log(removeD([1, 1, 2, 3, 3, 4]))
 
-
 // function missF(arr){
 //     let num=[]
 //     let js=[]
@@ -1428,58 +1402,369 @@ pyramid()
 //             if(arr[j]!=i){
 //                 js.push(i)
 //             }
-//         }   
-//     }    
-//     return js    
-    
-// }                         
+//         }
+//     }
+//     return js
+
+// }
 // console.log(missF([1, 2, 4, 5]))
 
 // function toCheck(arr){
 //        let og=[...arr]
-//        let data=arr.sort((a,b)=>a-b) 
+//        let data=arr.sort((a,b)=>a-b)
 //     //    for(let num of data){
 //     //      for(let item of ){
 //     //         if(item!=num){
 //     //             return false
 //     //         }
 //     //      }
-//     //    }             
+//     //    }
 
 //        for(let i=0 ;i<og.length;i++){
 //         if(og[i]!=data[i]){
 //             return false
 //         }
 //        }
-//        return true         
+//        return true
 // }
 // console.log(toCheck([1, 2, 3, 5,2]))
 
+// function findSecond(arr,num){
+//     let lg=arr.sort((a,b)=>b-a)
+//     return lg[num-1]
+//     // for(let item of arr){
+//     //     if(item>lg){
+//     //         lg=item
+//     //     }
+//     // }
 
-function findSecond(arr,num){
-    let lg=arr.sort((a,b)=>b-a)
-    return lg[num-1]
-    // for(let item of arr){
-    //     if(item>lg){
-    //         lg=item  
-    //     }
-    // }
+//     // let sc=[]
+//     // for(let char of arr){
+//     //     if(lg!=char){
+//     //         sc.push(char)
+//     //     }
+//     // }
+//     // for(let )
 
-    // let sc=[]
-    // for(let char of arr){
-    //     if(lg!=char){
-    //         sc.push(char)     
-    //     }    
-    // }      
-    // for(let )   
-                       
-}                                                                                       
-                                  
-                                        
-                                              
-console.log(findSecond([4, 1, 6, 7, 2],1))                      
-       
-                          
-                           
-         
-                                                                       
+// }
+
+// console.log(findSecond([4, 1, 6, 7, 2],1))
+
+// function hello(arr){
+//     if(arr.length===0 )return[];
+//     const result =[]
+//     let group =[arr[0]]
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i] ==arr[i-1]+1){
+//             group.push(arr[i])
+//         }else{
+//             result.push(group)
+//             group =[arr[i]]
+//          }
+
+//     }
+//     result.push(group)
+//     return result;
+
+// }
+// console.log(hello([1, 2, 3, 5, 6, 9, 10, 11]))
+
+// function groupAnagram(arr){
+//   let data=[]
+//   let map={}
+//   for(let item of arr){
+//         let n=item.split("").sort().join("")
+//         data.push(n)
+//         if(map[n]) {
+//             map[n].push(item)
+//         }
+//         else{
+//             map[n]=[item]
+//         }
+//   }
+//     return Object.values(map)
+// }
+
+// console.log(groupAnagram(['bat', 'tab', 'tap', 'pat', 'cat']))
+
+// function  MostUsed(arr){
+//     let  result={}
+//     let data=[]
+//      for(let item of arr){
+//         if(result[item]){
+//             result[item]++
+//         }
+//         else{
+//             result[item]=1
+//         }
+//      }
+
+//      for(char of arr){
+//         if(!data.includes(char) && data.length<=2){
+//             data.push(char)
+//         }
+//      }
+//      return data
+// }
+
+// console.log(MostUsed(["apple", "banana", "apple", "orange", "banana", "apple", "kiwi", "banana", "orange"]))
+// console.log(a)
+
+// fetch("https://jsonplaceholder.typicode.com/comments")
+// .then(res=>res.json())
+// .then(data=>data.forEach(item => {
+//     console.log(item)
+// })) 
+
+
+// const data = async () => {
+//   const res = await fetch("https://jsonplaceholder.typicode.com/comments");
+//   const data = await res.json();
+//   data.forEach((item) => {
+//     console.log(item);
+//   });
+// };
+// data()  
+
+const data =async()=>{
+    const res= awaitfetch("https://jsonplaceholder.typicode.com/comments");
+    const  data= await res.json();
+
+}
+
+// function revs(arr){
+//     let data=""
+//     for(let i=arr.length-1;i>=0;i--){
+//          data +=arr[i]
+//     }
+//     return data
+
+// }
+
+// console.log(revs("roshan"))  
+
+// function large(arr){
+//     let num =arr[0]
+//     for(let item of arr){
+//         if(item > num){
+//             num = item
+//         }
+//     }  
+//     return num      
+// }
+
+// console.log(large([1,4,5,4,2,4,6,]))  
+
+
+// function sortings(arr){ 
+
+//     for(let i=0;i<arr.length;i++){
+//         for(let j=0;j<arr.length;j++){
+//             if(arr[j]>arr[j+1]){
+//                 let temp= arr[j]
+//                 arr[j]=arr[j+1]
+//                 arr[j+1]=temp
+//             } 
+//         }
+//     }
+//     return arr
+// } 
+// console.log(sortings([1,4,5,2,4,4]))
+// let num =[1,4,5,2,4,4]
+// let ns = num.sort((a,b)=>a-b)
+// console.log(ns)  
+// const a = 5+"hello"    
+// console.log(a)  
+
+// const plaidrome=(arr)=>{
+//      let value=""
+//      for(let i=arr.length-1;i>=0;i--){
+//          value+=arr[i]
+//      }  
+//      if(value==arr){
+//         return "its  a palidrome" 
+//      }
+//      else{
+//         return "not a palidrome"
+//      } 
+// }
+ 
+// console.log(plaidrome("rar"))   
+
+
+// let data=[1,2,3,4,5,6,8,9]
+
+// const theFilter=(v)=>{ 
+//      let datas=v.filter((item)=>item%2==0)
+//      return datas
+// }
+// console.log(theFilter(data))
+
+
+// function toRemoveDuplicate(arr){
+//       let datas=[]
+//       for(item of arr){
+//         if(!datas.includes(item)){
+//             datas.push(item)
+//         }
+//       }  
+//       return datas 
+// }  
+// console.log(toRemoveDuplicate([1,3,4,6,6,7,5,6,7,4,5,6,3,6]))
+
+// function toSort(data){ 
+//     for(let i=0;i<=data.length;i++){
+//         for(let j=0;j<data.length;j++){
+//             if(data[j]>data[j+1]){
+//                 let temp=data[j+1]; 
+//                 data[j+1]=data[j];
+//                 data[j]=temp; 
+//             } 
+//         }
+//     }    
+//     return data   
+// }            
+// console.log(toSort([1,3,4,6,6,7,5,6,7,4,5,6,3,6]))   
+
+
+
+
+
+
+
+
+
+
+function fibonacciSeries(n){
+    // let fib=[0,2]
+    // for(let i=2;i<n;i++){
+    //     fib[i]=fib[i-1]+fib[i-2]
+    // }  
+    // return fib
+
+    let fib=[0,2]  
+    for(let i=2;i<n;i++){
+        fib[i]=fib[i-1]+fib[i-2]
+
+    }
+    return fib 
+  }  
+
+console.log(fibonacciSeries(10))  
+
+
+
+
+
+    
+
+// function sortdata(arr,n){
+//     for(let i=0;i<arr.length;i++){
+//         for(let j=0;j<arr.length;j++){
+//             if(arr[j]>arr[j+1]){
+//                 let temp =arr[j+1]
+//                 arr[j+1]=arr[j]
+//                 arr[j]=temp
+//             }
+//         }
+//     }
+//     return arr[n-1]
+// }
+
+// console.log(sortdata([1,3,4,6,6,7,5,6,7,4,5,6,3,6],3))  
+
+function coutnumber(arr){
+     let result={}     
+     for(let item of arr){   
+         if(result[item]){
+            result[item]++
+        }
+        else{  
+            result[item]=1
+        } 
+     }
+      let mostcount=0
+      let mostrepeat=null
+      for(let key in result){
+         if(result[key]>mostcount){
+            mostcount =result[key]
+            mostrepeat=key 
+         } 
+      }
+      return {mostcount ,mostrepeat}  
+} 
+console.log(coutnumber([1,3,4,6,6,7,5,6,7,4,5,6,3,6]))  
+  
+// function tofind(arr){  
+
+// }
+      
+
+// function tocaprital(){             
+//     let name ="roshan poulose"
+//     let data=name.split(" ") 
+//     let val=data.map((item)=>{
+//        return item[0].toUpperCase()+item.slice(1)
+//     })    
+//     return val            
+// }   
+// console.log(tocaprital())
+
+
+// let playlist=[]
+
+// function add(song){
+//     playlist.push(song)
+// } 
+// function remove(song){ 
+//     let index=playlist.indexOf(song)
+//     if(index>=-1){
+//         playlist.splice(index,1)
+//         console.log(`${song} were removed`)
+//     }
+//     else{
+//         console.log(`${song} were not found`)
+//     }
+// }
+
+// function remove(){
+//     let index=playlist.indexOf(song)  
+//     if(index>-1){
+//         playlist.splice(index,1)
+//     }     
+// } 
+// data.sort(()=>Math.random() -0.5)
+
+// function shuffle(){
+//     let data=[...playlist]
+//      data.sort(()=>Math.random() -0.5)
+//      console.log(data) 
+// }  
+// add("shape of view")
+// add("shape of ew")   
+// add("hello")
+// add("shape of vew")
+// add("were are you")
+// remove("shape of ew")  
+// console.log(playlist)
+// shuffle()   
+
+
+
+
+function stacks(arr){
+    let stack=[]
+    for(let item of arr.split("")){
+        if(item =="(") stack.push(")")
+        else if(item =="{") stack.push("}")
+        else if(item =="[") stack.push("]")
+        else if(stack.pop()!==item){
+            return false
+        }
+    }
+    return stack.length==0
+}
+console.log(stacks("([{}])"))
+
+
+ 
